@@ -1,5 +1,5 @@
 {
-  "image": "docker-osx",
+  "image": "sickcodes/docker-osx",
   "features": {
   }
 }
