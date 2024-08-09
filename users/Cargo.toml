@@ -1,6 +1,6 @@
 [package]
 name = "posixutils-users"
-version = "0.1.11"
+version = "0.2.0"
 edition = "2021"
 authors = ["Jeff Garzik"]
 license = "MIT"
@@ -11,30 +11,35 @@ plib = { path = "../plib" }
 clap.workspace = true
 gettext-rs.workspace = true
 libc.workspace = true
-syslog = "6.1"
 atty.workspace = true
+chrono.workspace = true
+syslog = "6.1"
 
 [[bin]]
 name = "id"
-path = "src/id.rs"
+path = "./id.rs"
 
 [[bin]]
 name = "logname"
-path = "src/logname.rs"
+path = "./logname.rs"
 
 [[bin]]
 name = "logger"
-path = "src/logger.rs"
+path = "./logger.rs"
 
 [[bin]]
 name = "mesg"
-path = "src/mesg.rs"
+path = "./mesg.rs"
 
 [[bin]]
 name = "pwd"
-path = "src/pwd.rs"
+path = "./pwd.rs"
 
 [[bin]]
 name = "tty"
-path = "src/tty.rs"
+path = "./tty.rs"
+
+[[bin]]
+name = "write"
+path = "./write.rs"
 

@@ -7,10 +7,12 @@
 // SPDX-License-Identifier: MIT
 //
 
+pub mod curuser;
 pub mod group;
 pub mod io;
 pub mod lzw;
 pub mod modestr;
+pub mod sccsfile;
 pub mod testing;
 pub mod utmpx;
 

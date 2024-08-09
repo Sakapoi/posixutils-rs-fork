@@ -14,7 +14,9 @@ Implementation goals include clean, safe Rust code and maximal use of
 small Rust community crates.  This project's utilities should "look like
 normal Rust programs."
 
-Contributions are welcome.  Developers and helpers, please read [CONTRIBUTING](CONTRIBUTING.md) for details.
+## WANTED:  Volunteers!
+
+Contributions are welcome.  Developers and non-developers alike, please read [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 Core specification: https://pubs.opengroup.org/onlinepubs/9699919799/
 
@@ -56,26 +58,37 @@ Because it is a FAQ, the major differences between this project and uutils are:
 ## Stage 3 - Test coverage
 
  - [x] ar (Development)
+ - [x] basename
  - [x] bc
  - [x] cksum
  - [x] cmp
+ - [x] comm
  - [x] compress (compress cat.)
  - [x] cp
  - [x] csplit
  - [x] cut
  - [x] diff
+ - [x] dirname
  - [x] expand
  - [x] expr
- - [x] file
  - [x] false
+ - [x] file
+ - [x] find
+ - [x] fold
+ - [x] grep
  - [x] head
+ - [x] link
  - [x] ls
+ - [x] mkdir
  - [x] mv
  - [x] nl
  - [x] nm (Development)
+ - [x] od
  - [x] paste
  - [x] pr
+ - [x] readlink
  - [x] rm
+ - [x] rmdir
  - [x] sort
  - [x] split
  - [x] strings
@@ -88,59 +101,57 @@ Because it is a FAQ, the major differences between this project and uutils are:
  - [x] uuencode (uue)
  - [x] unexpand
  - [x] uniq
+ - [x] unlink
  - [x] wc
+ - [x] what (SCCS)
  - [x] zcat (compress cat.)
 
 ## Stage 2 - Feature-complete and POSIX compliant
 
- - [x] basename
  - [x] cat
  - [x] chgrp
  - [x] chmod
  - [x] chown
  - [x] date
- - [x] dirname
  - [x] env
- - [x] fold
  - [x] ipcrm (IPC)
- - [x] link
  - [x] ln
  - [x] logname
  - [x] mesg
- - [x] mkdir
  - [x] mkfifo
  - [x] nice
  - [x] nohup
  - [x] pathchk
  - [x] pwd
- - [x] readlink
  - [x] renice
- - [x] rmdir
  - [x] sleep
  - [x] tee
  - [x] touch
  - [x] tty
- - [x] unlink
+ - [x] uname
+ - [x] write
 
 ## Stage 1 - Rough draft
 
  - [x] asa
  - [x] cal
- - [x] comm
  - [x] df
  - [x] du
  - [x] echo
  - [x] dd
+ - [x] getconf
  - [x] id
+ - [x] ipcs (IPC)
  - [x] kill
  - [x] logger
  - [x] printf
+ - [x] ps
+ - [x] realpath
  - [x] stty
  - [x] tabs
  - [x] test
  - [x] tput
  - [x] tsort
- - [x] uname
  - [x] who
  - [x] xargs
 
@@ -169,7 +180,6 @@ Because it is a FAQ, the major differences between this project and uutils are:
  - [ ] sccs (SCCS)
  - [ ] unget (SCCS)
  - [ ] val (SCCS)
- - [ ] what (SCCS)
 
  ### i18n category
  - [ ] gencat (i18n)
@@ -193,11 +203,7 @@ Because it is a FAQ, the major differences between this project and uutils are:
 
 ### Misc. category
  - [ ] awk
- - [ ] find
  - [ ] fuser
- - [ ] getconf
- - [ ] grep
- - [ ] ipcs (IPC)
  - [ ] join
  - [ ] lp
  - [ ] m4
@@ -206,17 +212,13 @@ Because it is a FAQ, the major differences between this project and uutils are:
  - [ ] man
  - [ ] more
  - [ ] newgrp
- - [ ] od
  - [ ] patch
  - [ ] pax
- - [ ] ps
- - [ ] realpath
  - [ ] sed
  - [ ] sh
  - [ ] talk
  - [ ] time
  - [ ] timeout
- - [ ] write
 
 ## Testing
 
